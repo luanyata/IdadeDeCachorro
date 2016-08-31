@@ -1,13 +1,8 @@
 package com.yata.idadedecachorro;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -35,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 String textoDigitado = caixaTexto.getText().toString();
 
                 if (textoDigitado.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Digite a idade do Cachorro", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Digite a idade do cachorro", Toast.LENGTH_LONG).show();
                 } else {
                     int valorDigitado = Integer.parseInt(textoDigitado);
                     int resultadoFinal = valorDigitado * 7;
